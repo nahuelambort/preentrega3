@@ -1,0 +1,26 @@
+footer{
+    width: 100%;
+    padding: 30px 0px;
+    background-color: rgb(0, 0, 0);
+    .caja_footer{
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+        .redes{
+            color: $naranja;
+            font-size: 2rem;
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+        .redes:hover{
+            text-shadow: 0 0 50px $naranja, 0 0 50px $naranja;
+        }
+    }
+    .copyright{
+        color: grey;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}

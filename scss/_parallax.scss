@@ -1,0 +1,33 @@
+main{
+    #parallax{
+    height: 900px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 0;
+	margin: 0;
+    }
+    .parallax_index {
+    background-image: url(../assets/Disco1.jpg);
+    }
+    .parallax_productos {
+	background-image: url(../assets/MuchosProductos.jpg);
+    }
+    .parallax_informacion {
+	background-image: url(../assets/MuchosQuemadores.jpg);
+    }
+    .parallax_contacto {
+	background-image: url(../assets/MuchosHornos.jpg);
+    }
+    h1{
+        color: $naranja;
+        font-weight: bold;
+        font-family: 'Spectral', serif;
+        text-align: center;
+	    padding-top: 200px;
+        color: black;
+        font-size: 70px;
+        text-shadow: 0 0 5px $naranja, 0 0 15px $naranja, 0 0 30px $naranja;
+    }
+}

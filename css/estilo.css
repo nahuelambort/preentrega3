@@ -1,0 +1,262 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: grey;
+  font-family: 'Spectral', serif; }
+
+.grid-conteiner {
+  display: grid;
+  gap: 0px;
+  grid-template-areas: "header" "main" "footer"; }
+
+.header {
+  grid-area: header; }
+
+.main {
+  grid-area: main; }
+
+.footer {
+  grid-area: footer; }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: black;
+  position: sticky;
+  top: 0; }
+  header .logo {
+    max-width: 5rem; }
+  header .abrir-menu {
+    display: none; }
+  header nav .cerrar-menu {
+    display: none; }
+  header nav .nav-list {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem; }
+    header nav .nav-list li a {
+      text-decoration: none;
+      color: #ff6600;
+      font-weight: bolder;
+      font-size: 1.8rem;
+      width: 350px;
+      padding: 20px;
+      border-radius: 20px; }
+    header nav .nav-list li a:hover {
+      border: none;
+      background-color: #ff6600;
+      color: black; }
+
+@media screen and (max-width: 578px) {
+  header .abrir-menu {
+    display: block;
+    border: 0;
+    font-size: 2rem;
+    background-color: transparent;
+    color: #ff6600;
+    cursor: pointer;
+    align-items: end; }
+  header nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 2rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 0%;
+    right: 0%;
+    width: 100%;
+    bottom: 0px;
+    background-color: black;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.95); }
+    header nav .cerrar-menu {
+      display: block;
+      border: 0;
+      font-size: 2rem;
+      background-color: transparent;
+      color: #ff6600;
+      cursor: pointer;
+      align-items: end; }
+    header nav .nav-list {
+      flex-direction: column;
+      align-items: end; }
+      header nav .nav-list li a {
+        color: #ff6600; }
+  header .nav.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: 250ms; } }
+
+main #parallax {
+  height: 900px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0; }
+
+main .parallax_index {
+  background-image: url(../assets/Disco1.jpg); }
+
+main .parallax_productos {
+  background-image: url(../assets/MuchosProductos.jpg); }
+
+main .parallax_informacion {
+  background-image: url(../assets/MuchosQuemadores.jpg); }
+
+main .parallax_contacto {
+  background-image: url(../assets/MuchosHornos.jpg); }
+
+main h1 {
+  color: #ff6600;
+  font-weight: bold;
+  font-family: 'Spectral', serif;
+  text-align: center;
+  padding-top: 200px;
+  color: black;
+  font-size: 70px;
+  text-shadow: 0 0 5px #ff6600, 0 0 15px #ff6600, 0 0 30px #ff6600; }
+
+main {
+  /*Tarjeta de productos*/ }
+  main .titulos h2 {
+    font-family: 'Spectral', serif;
+    margin: 30px;
+    margin-left: 70px;
+    margin-bottom: 0px;
+    padding: 25px;
+    font-size: 2.5rem;
+    font-weight: bolder; }
+  main .pregunta h2 {
+    padding: 20px;
+    margin: 30px;
+    margin-left: 70px;
+    font-size: 2rem; }
+  main p {
+    font-family: 'Montserrat', sans-serif;
+    color: black; }
+  main .respuesta {
+    padding: 20px;
+    margin: auto;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 30px;
+    font-size: 1.3rem; }
+  main .formulario {
+    text-align: left;
+    font-size: 1.4rem;
+    width: 560px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    margin-bottom: 50px; }
+    main .formulario .cuadroemail {
+      padding: auto;
+      margin-left: auto;
+      height: 1.5rem;
+      width: 435px;
+      resize: none;
+      border-radius: 2px;
+      border: none; }
+    main .formulario textarea {
+      padding: auto;
+      margin-left: auto;
+      height: 200px;
+      width: 435px;
+      resize: none;
+      border-radius: 10px; }
+    main .formulario .enviar {
+      border: none;
+      background-color: black;
+      color: white;
+      padding: 10px 10px;
+      cursor: pointer;
+      border: 1px solid white;
+      float: right;
+      margin-right: 5px;
+      border-radius: 5px; }
+      main .formulario .enviar:hover {
+        border: none;
+        background-color: white;
+        color: black;
+        padding: 10px 10px;
+        cursor: pointer;
+        border: 1px solid black; }
+  main .productos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 30px;
+    padding-top: 0px;
+    text-align: center; }
+    main .productos .item {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      width: 370px;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px; }
+      main .productos .item:hover {
+        box-shadow: 0 10px 20px black; }
+      main .productos .item .fotoproducto img {
+        width: 300px;
+        height: 300px;
+        border-radius: 40px; }
+      main .productos .item .info_producto h2 {
+        font-size: 2rem;
+        font-weight: bolder; }
+      main .productos .item .precio {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        padding: 10px; }
+      main .productos .item button {
+        border: none;
+        background-color: black;
+        color: white;
+        padding: 15px 10px;
+        cursor: pointer;
+        border: 1px solid white;
+        border-radius: 5px; }
+        main .productos .item button:hover {
+          border: none;
+          background-color: white;
+          color: black;
+          padding: 15px 10px;
+          cursor: pointer;
+          border: 1px solid black; }
+
+footer {
+  width: 100%;
+  padding: 30px 0px;
+  background-color: black; }
+  footer .caja_footer {
+    display: flex;
+    justify-content: center;
+    padding: 30px; }
+    footer .caja_footer .redes {
+      color: #ff6600;
+      font-size: 2rem;
+      margin-right: 50px;
+      margin-left: 50px; }
+    footer .caja_footer .redes:hover {
+      text-shadow: 0 0 50px #ff6600, 0 0 50px #ff6600; }
+  footer .copyright {
+    color: grey;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }

@@ -1,0 +1,42 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    .logo{
+        max-width: 5rem;
+    }
+    .abrir-menu{
+        display: none;
+    }
+    nav{
+        .cerrar-menu{
+            display: none;
+        }
+        .nav-list{
+            display: flex;
+            list-style-type: none;
+            gap: 2rem;
+            li a{
+                text-decoration: none;
+                color: $naranja;
+                font-weight: bolder;
+                font-size: 1.8rem;
+                width: 350px;
+                padding: 20px;
+                border-radius: 20px;
+            }
+            li a:hover{
+                border: none;
+                background-color: $naranja;
+                color: black;
+            }
+        }
+        
+    }
+
+}
+
